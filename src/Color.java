@@ -13,4 +13,16 @@ public class Color implements displayable {
     public void display() {
         System.out.println("Colors = Tanky: "+tank+", Aigher: "+head+", Body: "+body);
     }
+
+    public String getBody() {
+        return body;
+    }
+
+    public String getHead() {
+        return head;
+    }
+
+    public String getTank() {
+        return tank;
+    }
 }

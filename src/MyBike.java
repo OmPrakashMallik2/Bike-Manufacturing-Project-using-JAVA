@@ -25,4 +25,28 @@ public class MyBike implements displayable {
         pr.display();
         nm.display();
     }
+
+    public Brand getBr() {
+        return br;
+    }
+
+    public Color getCol() {
+        return col;
+    }
+
+    public Engine getEng() {
+        return eng;
+    }
+
+    public Model getMod() {
+        return mod;
+    }
+
+    public Name getNm() {
+        return nm;
+    }
+
+    public Price getPr() {
+        return pr;
+    }
 }

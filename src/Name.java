@@ -3,11 +3,12 @@ import java.util.Date;
 public class Name implements displayable {
     private Brand brand;
     private Model model;
-    private Date date;
-    Name(Brand brand, Model model, Date date){
+    private final Date date = new Date();
+
+    Name(Brand brand, Model model){
         this.brand = brand;
         this.model = model;
-        this.date = date;
+//        this.date = date;
     }
 
     @Override
