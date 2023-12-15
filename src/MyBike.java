@@ -1,10 +1,10 @@
-public class MyBike {
-    Engine eng;
-    Model mod;
-    Color col;
-    Brand br;
-    Price pr;
-    Name nm;
+public class MyBike implements displayable {
+    private Engine eng;
+    private Model mod;
+    private Color col;
+    private Brand br;
+    private Price pr;
+    private Name nm;
 
     MyBike(Engine engine,Model model, Color color, Brand brand, Price price, Name name){
         eng = engine;
@@ -15,7 +15,8 @@ public class MyBike {
         nm = name;
     }
 
-    void Details(){
+    @Override
+    public void display(){
         System.out.println("Bike Details is : ");
         eng.display();
         mod.display();

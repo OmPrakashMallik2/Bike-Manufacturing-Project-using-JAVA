@@ -1,8 +1,8 @@
-public class Engine {
-    int cc;
-    int battery;
-    int capacity;
-    int warranty;
+public class Engine implements displayable {
+    private int cc;
+    private int battery;
+    private int capacity;
+    private int warranty;
 
     Engine(int cc, int battery, int capacity, int warranty){
         this.cc = cc;
@@ -11,6 +11,7 @@ public class Engine {
         this.warranty = warranty;
     }
 
+    @Override
     public void display() {
         System.out.println("Engine = "+cc+" cc, "+battery+" unit, "+capacity+" KM, "+warranty+" years");
     }

@@ -1,3 +1,4 @@
+import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +8,9 @@ public class Main {
         Model model = new Model("Glamour BS6", 2023);
         Brand brand = new Brand("Hero");
         Price price = new Price(102999.00);
-        Name name = new Name(brand, model);
+        Name name = new Name(brand, model, new Date());
 
         MyBike bike1 = new MyBike(engine, model, color,brand, price, name);
-        bike1.Details();
+        bike1.display();
     }
 }
